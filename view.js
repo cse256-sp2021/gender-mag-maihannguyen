@@ -1,6 +1,5 @@
 // ---- Define your dialogs  and panels here ----
-
-
+var effective_perm = define_new_effective_permissions("id_name", add_info_col = true, which_permissions = null)
 
 // ---- Display file structure ----
 
