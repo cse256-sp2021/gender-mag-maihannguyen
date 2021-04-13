@@ -1,5 +1,5 @@
 // ---- Define your dialogs  and panels here ----
-var effective_perm = define_new_effective_permissions("id_name", add_info_col = true, which_permissions = null)
+var effective_perm = define_new_effective_permissions("id_name", add_info_col = true, which_permissions = null);
 
 // ---- Display file structure ----
 
@@ -42,6 +42,8 @@ for(let root_file of root_files) {
     let file_elem = make_file_element(root_file)
     $( "#filestructure" ).append( file_elem);    
 }
+
+$('#sidepanel').append(effective_perm);
 
 
 
