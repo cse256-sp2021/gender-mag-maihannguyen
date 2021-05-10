@@ -83,7 +83,7 @@ cant_remove_dialog.html(`
 
 // Make a confirmation "are you sure you want to remove?" dialog
 // Dialog for confirming removal of permissions for user and file (user and file attributed need to be populated)
-let are_you_sure_dialog = define_new_dialog('are_you_sure_dialog', "Are you sure?", {
+let are_you_sure_dialog = define_new_dialog('are_you_sure_dialog', "Are you sure you would like to remove?", {
     buttons: {
         Yes: {
             text: "Yes",
@@ -353,9 +353,9 @@ $('#adv_perm_inheritance').change(function(){
         // has just been turned off - pop up dialog with add/remove/cancel
         $(`<div id="add_remove_cancel" title="Security">
             Warning: if you proceed, inheritable permissions will no longer propagate to this object.<br/>
-            - Click Add to convert and add inherited parent permissions as explicit permissions on this object<br/>
-            - Click Remove to remove inherited parent permissions from this object<br/>
-            - Click Cancel if you do not want to modify inheritance settings at this time.<br/>
+            - Click 'Add' to convert and add inherited parent permissions as explicit permissions on this object<br/>
+            - Click 'Remove' to remove inherited parent permissions from this object<br/>
+            - Click 'Cancel' if you do not want to modify inheritance settings at this time.<br/>
         </div>`).dialog({ // TODO: don't create this dialog on the fly
             modal: true,
             width: 400,
@@ -601,8 +601,8 @@ function end_task() {
 
 
 $(`<div id="start-dialog" title = "Description">
-In a moment, you will see a simplified file system management interface and a task.
-Pretend that you are an administrator for this file system, and you are tasked with maintaining correct file permissions.
+In a moment, you will see a simplified file system management interface (something similar to editing permissions on Google Docs) and a task.
+Pretend that you are an administrator for this file system, and you are tasked with maintaining correct file permissions. You may be asked to change a user or a group's rights.
 <br/><br/>
 You will have 3 minutes to attempt the task described in the task panel at the bottom of the page. (Note: the task panel is collapsible; if it blocks the interface, use the bottom-right button to collapse it.)
 <br/><br/>
